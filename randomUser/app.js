@@ -8,6 +8,12 @@ const app = Vue.createApp({
       gender : 'male',
       picture : 'https://avatars.githubusercontent.com/u/66210047?v=4',
     }
+  },
+
+  methods : {
+    getUser(){
+      console.log(this.firstName);
+    }
   }
 })
 
