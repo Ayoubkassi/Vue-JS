@@ -32,6 +32,8 @@ img {
   border-radius: 50%;
   border: 5px #333 solid;
   margin-bottom: 1rem;
+  max-height: 180px;
+  max-width : 180px;
 }
 
 .male {
