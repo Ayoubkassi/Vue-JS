@@ -11,10 +11,19 @@ const app = Vue.createApp({
   },
 
   methods : {
-    getUser(){
-      console.log(this.firstName);
-    }
-  }
+    async getUser(){
+      const res = await fetch('https://randomuser.me/api')
+      const { results } = await res.json();
+      const data = results[0];
+      this.firstName = data.name.first
+      this.lastName = data.name.last
+      this.email = data.email
+      this.gender = data.gender
+      this.picture = data.picture.large
+    },
+  },
 })
 
 app.mount('#app')
+
+/* Nice Pic hhhhhh 'https://i1.sndcdn.com/artworks-000146996171-adv6ml-t500x500.jpg' */
