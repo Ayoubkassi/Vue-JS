@@ -26,19 +26,19 @@ export default {
         id : 1,
         text : "Fitness",
         day : "March 12 at 1:30pm",
-        reminder : "true"
+        reminder : true
      },
      {
         id : 2,
         text : "Eating",
         day : "March 12 at 11:30pm",
-        reminder : "false"
+        reminder : true
      },
      {
         id : 3,
         text : "Coding",
         day : "March 12 at 18:30pm",
-        reminder : "true"
+        reminder : false
      }
     ]
   }
